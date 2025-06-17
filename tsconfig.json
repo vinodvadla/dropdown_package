@@ -1,3 +1,19 @@
 {
-  "extends": "@react-native/typescript-config"
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "lib/types",
+    "outDir": "lib",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "emitDeclarationOnly": false,
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }
